@@ -1,0 +1,422 @@
+/*Estos son los estilos para todos los botones del sitio*/
+
+.button-primary {
+    border-radius: 20px;
+    background-color: #03A9F4;
+    padding: 8px 20px;
+    border: none;
+    margin: 9px 0px;
+    cursor: pointer;
+}
+
+.button-defautl {
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    padding: 8px 20px;
+    border: 1px solid #bdbdbd;
+    margin: 9px 0px;
+    cursor: pointer;
+}
+
+.button-secondary {
+    border-radius: 20px;
+    background-color: #92009E;
+    padding: 8px 30px;
+    border: none;
+    margin: 9px 0px;
+}
+
+.button-save {
+    border-radius: 20px;
+    background-color: #00AC78;
+    padding: 8px 30px;
+    border: none;
+    margin: 9px 0px;
+}
+
+.button-cancel {
+    border-radius: 20px;
+    background-color: #F40303;
+    padding: 8px 30px;
+    border: none;
+    margin: 9px 0px;
+}
+
+.button-search-bar {
+    background-color: #03A9F4;
+    border: none !important;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.button-primary:hover {
+    -webkit-box-shadow: 2px 2px 24px 0px #03A9F4af;
+    box-shadow: 2px 2px 24px 0px #03A9F4af;
+    transition: 0.5s;
+}
+
+.button-defautl:hover {
+    -webkit-box-shadow: 1px 1px 10px 0px #0000002a;
+    box-shadow: 1px 1px 10px 0px #0000002a;
+    transition: 0.5s;
+}
+
+.button-secondary:hover {
+    -webkit-box-shadow: 2px 2px 24px 0px #91009eaf;
+    box-shadow: 2px 2px 24px 0px #91009eaf;
+    transition: 0.5s;
+}
+
+.button-search-bar:hover {
+    background-color: #0039f5;
+    transition: 0.3s;
+}
+
+.button-save:hover {
+    -webkit-box-shadow: 2px 2px 24px 0px #00AC78;
+    box-shadow: 2px 2px 24px 0px #00AC78;
+    transition: 0.5s;
+}
+
+.button-cancel:hover {
+    -webkit-box-shadow: 2px 2px 24px 0px #F40303;
+    box-shadow: 2px 2px 24px 0px #F40303;
+    transition: 0.5s;
+}
+
+
+/*Estos son los estilos para la barra de busqueda principal del sitio*/
+
+.barra-busqueda {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.barra-busqueda input,
+.barra-busqueda select,
+.barra-busqueda button {
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+}
+
+.barra-busqueda:hover {
+    -webkit-box-shadow: 2px 2px 24px 0px #000000af;
+    box-shadow: 2px 2px 24px 0px #000000af;
+    transition: 0.5s;
+}
+
+
+/*Estos son los estilos para todos los select del sitio*/
+
+
+/*Estos son los estilos para todos las tarjetas de categoria del sitio*/
+
+.card-category {
+    background-color: #C56DFB;
+    border-radius: 20px;
+    font-size: 20px;
+    min-height: 190px;
+}
+
+.card-category .icon {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.card-category .titulo {
+    font-weight: bolder;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.card-category .descripcion {
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-align: center;
+}
+
+
+/*Estos son los estilos para las tarjetas de anuncio del sitio*/
+
+.card-advertisement {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #D2D2D2;
+}
+
+.card-advertisement .ubicacion .icon {
+    height: 18px;
+    color: #f40303;
+}
+
+.card-advertisement .ubicacion .city {
+    font-size: 15px;
+}
+
+.card-advertisement .valoracion .puntuacion {
+    font-size: 15px;
+}
+
+.card-advertisement .valoracion .star {
+    height: 15px;
+    color: #03A9F4;
+}
+
+.card-advertisement .icon {
+    height: 20px;
+}
+
+.card-advertisement .border-bottom {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.card-advertisement .photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-advertisement .photo .price {
+    color: #ffffff;
+    background-color: #0000007a;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+
+/*Estos son los estilos para el paso a paso del sitio*/
+
+.paso-paso {}
+
+.paso-paso .circle {
+    height: 14rem;
+    width: 14rem;
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 100%;
+}
+
+.paso-paso .icon {}
+
+.paso-paso .description {}
+
+
+/*Estos son los estilos para los planes del precio del sitio*/
+
+.price-plan {}
+
+.price-plan .price-plan-selected {
+    border: 3px solid #03A9F4!important;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.price-plan .price-plan-default {
+    border: 1px solid #DFDFDF;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.price-plan .price {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #03A9F4;
+}
+
+.price-plan .item {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    color: #999999;
+    font-weight: 500;
+}
+
+.price-plan .button-buy {
+    border-radius: 20px;
+    background-color: #03A9F4;
+    color: #ffffffd9;
+    border: none;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+
+/*Estos son los estilos para los componente del formulario del sitio*/
+
+.form-component {
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0rem;
+    font-family: 'Roboto', sans-serif !important;
+    color: #4d4d4d;
+}
+
+.form-component-shadow {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0rem;
+    font-family: 'Roboto', sans-serif !important;
+    color: #909090;
+    background-color: #eeeeee;
+}
+
+
+/*Estos son los estilos para las tablas del sitio*/
+
+.table {
+    border-collapse: collapse;
+    min-width: 840px;
+}
+
+.table tbody tr {
+    cursor: pointer;
+}
+
+.table tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+.table th {
+    border-bottom: 1px solid #f1f1f1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.table td {
+    border-bottom: 1px solid #f1f1f1;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.table .btn-edit {
+    border: none;
+    background-color: transparent;
+}
+
+.table .img {
+    height: 50px;
+}
+
+
+/*Estos son los estilos para los titulos de sección*/
+
+.title-section {}
+
+.title-section .line {
+    background-color: #03A9F4;
+    height: 3px;
+    border-radius: 20px;
+}
+
+.title-section .descripcion {
+    font-size: 1.5rem;
+}
+
+
+/*Estos son los estilos para el pie de página*/
+
+.footer {}
+
+.footer .logo {
+    width: 10rem;
+    height: auto;
+}
+
+.footer .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*Estos son los estilos para cartas estandares de background*/
+
+.card {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.card .card-title {
+    border-bottom: 1px solid #0000000c;
+}
+
+.card .card-body {
+    padding: 2rem;
+}
+
+.card .card-footer {
+    border-top: 1px solid #0000000c;
+}
+
+.card .card-divider {
+    border-top: 1px solid #0000000c;
+    border-bottom: 1px solid #0000000c;
+}
+/*Estilos para ventanas modales*/
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog>div {
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.close {
+    background: #a80000;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
+}
+
+.close:hover {
+    background: #00d9ff;
+}

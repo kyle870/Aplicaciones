@@ -1,0 +1,103 @@
+/*Estas son las clases para el manejo de los colores de los textos*/
+
+.text-primary {
+    color: #03A9F4;
+}
+
+.text-secondary {
+    color: #92009E;
+}
+
+.text-tertiary {
+    color: #1E0253;
+}
+
+.text-warning {
+    color: #FAFF00;
+}
+
+.text-dangerous {
+    color: #FF0000;
+}
+
+.text-ok {
+    color: #00AC78;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-black-75 {
+    color: #000000;
+    opacity: 0.75;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-white-90 {
+    color: #ffffff;
+    opacity: 0.90;
+}
+
+.text-white-75 {
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+.text-white-50 {
+    color: #ffffff;
+    opacity: 0.50;
+}
+
+
+/*Estas son las clases para el manejo de los colores de los fondos*/
+
+.bg-primary {
+    background-color: #03A9F4;
+}
+
+.bg-secondary {
+    background-color: #92009E;
+}
+
+.bg-tertiary {
+    background-color: #1E0253;
+}
+
+.bg-warning {
+    background-color: #FAFF00;
+}
+
+.bg-dangerous {
+    background-color: #FF0000;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-black-75 {
+    background-color: #000000;
+    opacity: 0.75;
+}
+
+.bg-black-50 {
+    background-color: #000000;
+    opacity: 0.50;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.bg-default {
+    background-color: #F8F8F8;
+}

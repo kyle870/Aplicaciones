@@ -1,0 +1,43 @@
+.jump {
+    transition: 0.5s;
+}
+
+.jump:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.shadow-default {
+    -webkit-box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.261);
+    box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.261);
+}
+
+.shadow-black {
+    transition: 0.5s;
+}
+
+.shadow-black-min {
+    transition: 0.5s;
+}
+
+.shadow-primary {
+    transition: 0.5s;
+}
+
+.shadow-black:hover {
+    -webkit-box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.46);
+    box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.46);
+    transition: 0.5s;
+}
+
+.shadow-black-min:hover {
+    -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.253);
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.253);
+    transition: 0.5s;
+}
+
+.shadow-primary:hover {
+    -webkit-box-shadow: 2px 2px 24px 0px #91009eaf;
+    box-shadow: 2px 2px 24px 0px #91009eaf;
+    transition: 0.5s;
+}
