@@ -20,12 +20,12 @@ header {
     outline: none;
 }
 
-#btn-guardar, #btn-postear, #btn-cancelar{
+#btn-guardar, #btn-postear, #btn-cancelar, #btn-editar-perfil, #btn-guardar-perfil, #btn-deshacer-perfil{
     width: 10em;
     height: 3em;
 }
 
-/* */
+/* Estilos dela imagen*/
 
  .container{
     height: 20rem;
