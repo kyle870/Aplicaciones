@@ -20,23 +20,27 @@ header {
     outline: none;
 }
 
-#btn-guardar, #btn-postear, #btn-cancelar, #btn-editar-perfil, #btn-guardar-perfil, #btn-deshacer-perfil{
+#btn-guardar, #btn-postear, #btn-cancelar, #btn-editar-perfil, #btn-guardar-perfil, #btn-deshacer-perfil,  #btn-subir-foto, #btn-eliminar-foto{
     width: 10em;
     height: 3em;
 }
+.card-title{
+    background-color: #f7f7f7;
+}
 
-/* Estilos dela imagen*/
+/* Estilos dela imagen general*/
 
  .container{
     height: 20rem;
     width: 20rem;
     position: relative;
+    /* background-color: lawngreen; */
   }
   .container .wrapper{
     position: relative;
     height: 1rem;
-    border-radius: 10px;
-    background: #fff;
+    /* border-radius: 10px; */
+    /* background: rgb(255, 0, 0); */
     border: 2px dashed #c2cdda;
     display: flex;
     align-items: center;
@@ -53,6 +57,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: lightblue; */
   }
  .wrapper img{
     object-fit: cover;
@@ -95,22 +100,10 @@ header {
     display: block;
   }
   #custom-btn{
-    /* margin-top: 1rem;
-    display: block;
-    width: 100%;
-    height: 50px;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer; */
     background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
   }
-/*Estilos del preview de la foto*/
+
+/*Estilos del perfil*/
 
 /*Clases del navbar*/
 

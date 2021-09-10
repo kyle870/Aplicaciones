@@ -40,11 +40,9 @@
             <div class="navbar-nav ml-auto">
                 <!-- Div del post del anuncio -->
                 <div class="button-primary mr-3">
-                    <a href="./CrearAnuncio.html" class="bg-transparent text-nowrap text-white text-decoration-none hover-none">Postea tu
-                        anuncio</a>
+                    <a href="./CrearAnuncio.html" class="bg-transparent text-nowrap text-white text-decoration-none hover-none">Publicar Anuncio</a>
                 </div>
-                <a href="./MisAnuncios.html" class="button-secondary text-white nav-item nav-link px-3 mr-3">Jonissa María
-                    Alfaro Carrión</a>
+                <a href="./MisAnuncios.html" class="button-secondary text-white nav-item nav-link px-3 mr-3">Ver mis anuncios</a>
             </div>
         </div>
     </nav>
@@ -53,66 +51,43 @@
     <div class="p-3 mt-5 pt-5">
         <div class="row mx-0">
             <div class="col-12 row m-0">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="px-3 py-3 my-auto">
-                        <div class="w-100 h-50 card shadow-default">
-                            <div class="card-title w-100 items-in-row py-3">
+                
+                <!-- Descripcion -->
+                <div class="col-12">
+                    <div class="px-3 py-3 h-100">
+                        <div class="w-100 h-100 card shadow-default">
+                            <div class="card-title w-100 items-in-row p-3">
                                 <label class="w-100 text-center m-auto font-18 text-bold">Jonissa María Alfaro Carrión</label>
                             </div>
                             <div class="card-body row m-0">
 
-                                <div class="container ">
-                                    <div class="wrapper h-100">
-                                       <div class="image border-0">
-                                          <img class="" id="vista" src="#" alt="">
-                                       </div>
-                                       <div id="textPreview" class="content">
-                                          <div class="icon text-center">
-                                             <i class="fas fa-cloud-upload-alt"></i>
-                                          </div>
-                                          <div class="text text-center p-2">
-                                             Seleccionar foto de perfil
-                                          </div>
-                                       </div>
-                                       <div id="cancel-btn">
-                                          <i class="fas fa-times"></i>
-                                       </div>
-                                       <div class="file-name text-center">
-                                          File name here
-                                       </div>
+                                <div class="row m-0 col-lg-6 col-md-6 col-sm-12 ">
+                                    <div class="container px-0 py-3">
+                                        <div class="wrapper w-100 h-100 "> <!---Elementos para subir la imagen-->
+                                           <div class="image">
+                                              <img class="mh-100 mw-100" id="vista" src="#" alt="">
+                                           </div>
+                                           <div id="textPreview" class="content">
+                                              <div class="icon text-center">
+                                                 <i class="fas fa-cloud-upload-alt"></i>
+                                                 <input id="default-btn" type="file" accept="image/*" multiple hidden>
+                                              </div>
+                                              <div class="text text-center p-2">
+                                                 Subir foto de perfil
+                                              </div>
+                                           </div>
+                                        </div>
                                     </div>
-                                </div>    
+                                    <div id="div-foto-perfil" class="row justify-content-center mt-3 mx-auto">
+                                        <button id="primary_profile-btn"  type="button" onclick="defaultBtnActive()"class="btn btn-success text-white cursor-pointer  font-weight-bold m-2"><i class="fas fa-cloud-upload-alt mx-2"></i>Cargar</button>
+                                        <button id="cancel-profile-btn" class="btn btn-outline-danger cursor-pointer  font-weight-bold m-2"><i class="fas fa-trash mx-2"></i>Eliminar</button>
+                                    </div>
+                                </div>
 
-                                <div id="containerButton" class=" w-100">
-                                    <button class="btn-primary mt-3 btn-block h-100 border-0 text-white rounded" onclick="defaultBtnActive()" id="primary_profile-btn">Elegir una imagen <i class="fas fa-camera mx-3"></i></button>
-                                    <input id="default-btn" type="file" hidden>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Descripcion -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="px-3 py-3 h-100">
-                        <div class="w-100 h-100 card shadow-default">
-                            <div id="desc-persona">
-                                <div class="card-title w-100 items-in-row py-3">
-                                    <label class="w-100 text-center m-auto font-18 text-bold">Sobre mí</label>
-                                </div>
-                                <div class="card-body row m-0">
-                                    <textarea id="descript" class="form-component w-100 h-100" placeholder="Breve descripción de tu persona..."></textarea>
-                                </div>
-                            </div>
-                            <div id="desc-password">
-                                <div class="card-title w-100 items-in-row py-3">
-                                    <label class="w-100 text-center m-auto font-18 text-bold">Administración de contraseña</label>
-                                </div>
-                                <div class="card-body row m-0">
-                                    <label class="text-black-50">Contraseña</label>
-                                    <input id="lblContraseña" class="form-component w-100 mb-4">
-                                    <label class="text-black-50">Nueva Contraseña</label>
-                                    <input id="lblContraseñaNueva" class="form-component w-100 mb-4">
+                                <div id="desc-persona" class="row col-lg-6 col-md-6 col-sm-12 mx-auto">
+                                    <div class="py-3 w-100 h-100">
+                                        <textarea id="descript" class="form-component text-justify m-0 w-100 h-100" placeholder="Breve descripción de tu persona..."></textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -170,13 +145,26 @@
                                     </div>
                                     <div class="claseGenero">
                                         <label class="text-black-50">Género</label>
-                                        <select id="category-post" class="form-component w-100 mb-4">
+                                        <select id="category-post" class="form-component align-middle w-100 mb-4">
                                             <option value="">Seleccione</option>
                                             <option value="1">Hombre</option>
                                             <option value="2">Mujer</option>        
                                         </select>
                                     </div>
                                 </div>
+                                <form class="row col-12 m-0">
+                                    <div class="card-title w-100 items-in-row py-3">
+                                        <label class="w-100 text-center m-auto font-18 text-bold">Administración de contraseña</label>
+                                    </div>
+                                    <div class="claseContrasena col-lg-6 col-md-6 col-sm-12 m-0">
+                                        <label class="text-black-50">Contraseña</label>
+                                        <input id="inpContrasena" class="form-component w-100 mb-4">
+                                    </div>
+                                    <div class="nuevaContrasena col-lg-6 col-md-6 col-sm-12 m-0">
+                                        <label class="text-black-50">Nueva Contraseña</label>
+                                        <input id="inpNuevaContrasena" class="form-component w-100 mb-4">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

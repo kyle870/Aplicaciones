@@ -6,7 +6,7 @@ const wrapper = document.querySelector(".wrapper");
 const fileName = document.querySelector(".file-name");
 const defaultBtn = document.querySelector("#default-btn");
 const customBtn = document.querySelector("#primary_profile-btn");
-const cancelBtn = document.querySelector("#cancel-btn i");
+const cancelBtn = document.querySelector("#cancel-profile-btn");
 const elementsPreview = document.querySelector("#textPreview");
 
 const img = document.querySelector("#vista");
@@ -27,28 +27,17 @@ defaultBtn.addEventListener("change", function () {
             wrapper.classList.add("active");
             elementsPreview.style.display = "none";
             img.classList.add("img-thumbnail");
-            /**boton de perfil */
-            customBtn.classList.add("btn-danger");
-            customBtn.classList.remove("btn-primary")
-            customBtn.textContent = "Eliminar foto de perfil";
-
         }
-        customBtn.addEventListener("click", function () {
+        cancelBtn.addEventListener("click", function () {
             img.src = "";
             elementsPreview.style.display = "block";
             wrapper.classList.remove("active");
-            img.classList.remove("img-thumbnail");
-            /**Boton de perfil */
-            customBtn.classList.remove("btn-danger");
-            customBtn.classList.add("btn-primary")
-            customBtn.textContent = "Elegir una imagen";
-
-            
+            img.classList.remove("img-thumbnail");    
         })
         reader.readAsDataURL(file);
     }
-    if (this.value) {
+    /*if (this.value) {
         let valueStore = this.value.match(regExp);
         fileName.textContent = valueStore;
-    }
+    }*/
 });
