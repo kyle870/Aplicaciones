@@ -43,10 +43,9 @@
                 <!-- div contenedor de los botones -->
                 <div class="mr-3">
                     <div class="row button-secondary mx-auto w-100">
-                        <a href="./Login.html" class="bg-transparent text-white-90 cursor-pointer text-decoration-none hover-none pr-2 mr-2 border-right">Iniciar
+                        <a href="./Login.html" class="bg-transparent text-white-90 cursor-pointer text-decoration-none hover-none">Iniciar
                             Sesión</a>
-                        <!-- <hr class="divider-v mx-3 my-0" style="  background: #000;  border: 1px solid rgba(255, 255, 255, 0.816);  "> -->
-                        <a href="./RegistrarseManual.html" class="bg-transparent text-white-90 cursor-pointer text-decoration-none hover-none">Registrarse</a>
+                        <!-- <a href="./RegistrarseManual.html" class="bg-transparent text-white-90 cursor-pointer text-decoration-none hover-none">Registrarse</a> -->
                     </div>
                 </div>
             </div>
@@ -67,16 +66,14 @@
                         <div class="card-title w-100 items-in-row pt-3">
                             <label class="w-100 text-black text-bold text-center">Información del Anunciante</label>
                         </div>
-                        <div class="card-body row m-0">
-                            <span class="text-black col-12 mb-4 text-bold text-center bb-black-20">Jonissa María Alfaro Carrión</span>
-
+                        <div class="card-body row m-0 justify-content-center">
+                            <span id="nombreAnunciante" class="text-black col-12 mb-4 text-bold text-center bb-black-20">Jonissa María Alfaro Carrión</span>
                             <span class="text-black text-bold col-md-6 col-lg-6 col-sm-12 mb-2">Teléfono Celular:</span>
-                            <span class="text-black col-md-6 col-lg-6 col-sm-12 mb-2">88898879</span>
+                            <span id="celularAnunciante" class="text-black col-md-6 col-lg-6 col-sm-12 mb-2">88898879</span>
                             <span class="text-black text-bold col-md-6 col-lg-6 col-sm-12 mb-2">Correo Electrónico:</span>
-                            <span class="text-black col-md-6 col-lg-6 col-sm-12 mb-2">jonissa@gmail.com</span>
+                            <span id="correoAnunciante" class="text-black col-md-6 col-lg-6 col-sm-12 mb-2">jonissa@gmail.com</span>
                             <label class="col-12 my-2 text-ok text-bold">PERFIL VERIFICADO <i class="fas fa-check ml-2"></i></label>
-                            <button type="submit" class="button-primary text-white-90 text-bold">Notificar
-                                interés<i class="fas fa-bell ml-2"></i></button>
+                            <button type="submit" class="button-primary text-white-90 text-bold">Notificar interés<i class="fas fa-bell ml-2"></i></button>
                         </div>
                     </div>
                 </div>
@@ -200,6 +197,25 @@
                                         <span class="text-black-75 mr-3">
                                             13/04/2021 10:56 am
                                         </span>
+                                    </div>
+                                </div>
+                                <div class="row mx-auto my-2 justify-content-start">
+                                    <span class="text-bold-600 mr-2 my-auto">
+                                        Valorar: 
+                                    </span>
+                                    <div class="container-star">
+                                        <div class="rating d-flex flex-row-reverse">
+                                          <input type="radio" name="rating" id="rating-5">
+                                          <label for="rating-5" class="my-auto"></label>
+                                          <input type="radio" name="rating" id="rating-4">
+                                          <label for="rating-4" class="my-auto"></label>
+                                          <input type="radio" name="rating" id="rating-3">
+                                          <label for="rating-3" class="my-auto"></label>
+                                          <input type="radio" name="rating" id="rating-2">
+                                          <label for="rating-2" class="my-auto"></label>
+                                          <input type="radio" name="rating" id="rating-1">
+                                          <label for="rating-1" class="my-auto"></label>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
