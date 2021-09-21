@@ -189,9 +189,6 @@
 
 
 /*Estos son los estilos para el paso a paso del sitio*/
-
-.paso-paso {}
-
 .paso-paso .circle {
     height: 14rem;
     width: 14rem;
@@ -200,14 +197,8 @@
     border-radius: 100%;
 }
 
-.paso-paso .icon {}
-
-.paso-paso .description {}
-
 
 /*Estos son los estilos para los planes del precio del sitio*/
-
-.price-plan {}
 
 .price-plan .price-plan-selected {
     border: 3px solid #03A9F4!important;
@@ -309,8 +300,6 @@
 
 /*Estos son los estilos para los titulos de sección*/
 
-.title-section {}
-
 .title-section .line {
     background-color: #03A9F4;
     height: 3px;
@@ -323,8 +312,6 @@
 
 
 /*Estos son los estilos para el pie de página*/
-
-.footer {}
 
 .footer .logo {
     width: 10rem;

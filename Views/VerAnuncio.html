@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./../Style/sizes.css">
     <link rel="stylesheet" href="./../Style/bootstrap.min.css">
     <link rel="shortcut icon" href="./../Resources/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <title>Anuncios</title>
 </head>
@@ -22,7 +23,7 @@
     <!--Esto es la barra de navegacion de la pagina-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a href="./../index.html" class="navbar-brand">
-            <img src="../Resources/LogoGrande.png" height="28" alt="CoolBrand">
+            <img src="../Resources/LogoGrande.png" height="40" alt="CoolBrand">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -64,16 +65,18 @@
                 <div class="px-3 pb-3">
                     <div class="w-100 card shadow-default">
                         <div class="card-title w-100 items-in-row pt-3">
-                            <label class="w-100 ml-4 text-black text-bold">Información del Anunciante</label>
+                            <label class="w-100 text-black text-bold text-center">Información del Anunciante</label>
                         </div>
                         <div class="card-body row m-0">
-                            <label class="text-black-75 col-12 mb-2 text-bold">Jonissa María Alfaro Carrión</label>
-                            <label class="text-black col-12 mb-2">Telefono: 88898879</label>
-                            <label class="text-black col-12 mb-2">Celular: 22332233</label>
-                            <label class="text-black col-12 mb-3">Correo Electronico: jonissa@gmail.com</label>
-                            <label class="col-12 mb-2 text-ok text-bold">PERFIL VERIFICADO</label>
-                            <a href="#openModal" class=" button-primary text-white-90 text-decoration-none">Notificar
-                                interes del anuncio</a>
+                            <span class="text-black col-12 mb-4 text-bold text-center bb-black-20">Jonissa María Alfaro Carrión</span>
+
+                            <span class="text-black text-bold col-md-6 col-lg-6 col-sm-12 mb-2">Teléfono Celular:</span>
+                            <span class="text-black col-md-6 col-lg-6 col-sm-12 mb-2">88898879</span>
+                            <span class="text-black text-bold col-md-6 col-lg-6 col-sm-12 mb-2">Correo Electrónico:</span>
+                            <span class="text-black col-md-6 col-lg-6 col-sm-12 mb-2">jonissa@gmail.com</span>
+                            <label class="col-12 my-2 text-ok text-bold">PERFIL VERIFICADO <i class="fas fa-check ml-2"></i></label>
+                            <button type="submit" class="button-primary text-white-90 text-bold">Notificar
+                                interés<i class="fas fa-bell ml-2"></i></button>
                         </div>
                     </div>
                 </div>
@@ -81,8 +84,8 @@
             <div class="col-extlarg-4 col-mediu-12 col-peque-12">
                 <div class="px-3 pb-3">
                     <div class="w-100 card shadow-default">
-                        <div class="card-title w-100 items-in-row py-3">
-                            <label class="w-100 ml-4 text-black text-bold">Otros anuncios de este perfil</label>
+                        <div class="card-title w-100 items-in-row pt-3">
+                            <label class="w-100 text-black text-bold text-center">Otros anuncios de este perfil</label>
                         </div>
                         <div class="card-body row mx-0 max-h-otros-anuncios">
                             <div class="col-12 row mx-0 mb-3 pb-3 bb-black-20">
@@ -138,14 +141,14 @@
                 </div>
             </div>
         </div>
-        <div class="row mx-0">
+        <div class="row mx-0 mt-3">
             <div class="col-12">
                 <div class="pb-3">
                     <div class="w-100 card shadow-default">
                         <div class="card-title w-100 items-in-row py-3">
-                            <label class="w-100 ml-4 text-black text-bold">Detalle del producto</label>
+                            <label class="w-100 text-center text-black text-bold">Detalles del producto</label>
                         </div>
-                        <div class="card-body row m-0 py-2">
+                        <div class="card-body row m-0 pt-3">
                             <p class="text-black-75 col-12 text-justify">
                                 El MacBook Pro te ofrece un rendimiento descomunal gracias a sus procesadores Intel Core de séptima generación, con velocidades Turbo Boost de hasta 4,1 GHz. Nada le frena, ni un render de modelos en 3D ni una codificación de vídeo. Y ahorra energía en
                                 las tareas sencillas como navegar por Internet o leer emails.
@@ -288,17 +291,17 @@
                         Enlaces rápidos
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="# ">
+                        <a href="../index.html">
                             Inicio
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Anuncios.html ">
+                        <a href="./Anuncios.html ">
                             Anuncios
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Contactanos.html ">
+                        <a href="./Contactanos.html ">
                             Contáctanos
                         </a>
                     </span>
@@ -348,14 +351,14 @@
             </div>
         </div>
     </div>
-    <script>
+    <!-- <script>
         var formInteres = document.getElementById("form-interes");
         var formInteresBtnClose = document.getElementById("btn-close");
 
         formInteresBtnClose.addEventListener("click", function(e) {
             formInteres.reset();
         });
-    </script>
+    </script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./../Scripts/bootstrap.min.js"></script>

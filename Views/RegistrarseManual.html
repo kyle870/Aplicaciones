@@ -23,9 +23,9 @@
     <!--Esto es la barra de navegacion de la pagina-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a href="./../index.html" class="navbar-brand">
-            <img src="../Resources/LogoGrande.png" height="28" alt="CoolBrand">
+            <img src="../Resources/LogoGrande.png" height="40" alt="FindItNow">
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button title="btn-toggler" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -55,7 +55,7 @@
 
     <!--Contenido de la página-->
     <div class="row mx-0 bg-responsive mt-5">
-        <div class="col-10 col-extlarg-8 col-larg-8 col-mediu-8 col-peque-8 m-auto">
+        <div class="col-lg-4 col-md-8 col-sm-10 m-auto">
             <div class="w-100 card shadow-default">
 
                 <form>
@@ -63,17 +63,17 @@
                         <label class="w-100 text-center m-auto text-primary font-18 text-bold">Registrarse</label>
                     </div>
                     <div class="card-body row m-0">
-                        <label class="text-black-50">Nombre de usuario</label>
-                        <input class="form-component w-100 mb-4" type="text" required>
-                        <label class="text-black-50">Correo electrónico</label>
-                        <input class="form-component w-100 mb-4" type="email" required>
-                        <label class="text-black-50">Contraseña</label>
-                        <input class="form-component w-100 mb-4" type="password" required>
-                        <label class="text-black-50">Repetir contraseña</label>
-                        <input class="form-component w-100" type="password" required>
+                        <label for="inpRegistroUsuario" class="text-black-50 text-bold font-18"><i class="fas fa-user mx-2"></i>Nombre de usuario</label>
+                        <input id="inpRegistroUsuario" class="form-component w-100 mb-4" type="text" required>
+                        <label for="inpRegistroEmail" class="text-black-50 text-bold font-18"><i class="fas fa-envelope mx-2"></i>Correo electrónico</label>
+                        <input id="inpRegistroEmail" class="form-component w-100 mb-4" type="email" required>
+                        <label for="inpRegistroPassword" class="text-black-50 text-bold font-18"><i class="fas fa-key mx-2"></i>Contraseña</label>
+                        <input id="inpRegistroPassword" class="form-component w-100 mb-4" type="password" required>
+                        <label for="inpPasswordAgain" class="text-black-50 text-bold font-18"><i class="fas fa-key mx-2"></i>Repetir contraseña</label>
+                        <input id="inpPasswordAgain" class="form-component w-100" type="password" required>
                     </div>
                     <div class="card-footer w-100 items-in-row py-2">
-                        <button type="submit" class="button-primary text-white mx-auto">Continuar</button>
+                        <button type="submit" class="button-primary text-white text-bold mx-auto">Continuar<i class="fas fa-arrow-right ml-2"></i></button>
                     </div>
                 </form>
 
@@ -86,7 +86,7 @@
             <div class="p-5 row footer ">
                 <div class="col-extlarg-4 col-mediu-6 col-peque-12 row m-0 mb-3 ">
                     <div class="col-12 row m-0 ">
-                        <img class="mx-0 logo " src="./../Resources/LogoGrande.png " />
+                        <img class="mx-0 logo " src="./../Resources/LogoGrande.png "  title="Find-It-Now" />
                     </div>
                     <div class="col-12 pt-4 text-white-75 ">
                         <span class="mr-3 ">
@@ -159,17 +159,17 @@
                         Enlaces rápidos
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="# ">
+                        <a href="../index.html">
                             Inicio
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Anuncios.html ">
+                        <a href="./Anuncios.html ">
                             Anuncios
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Contactanos.html ">
+                        <a href="./Contactanos.html ">
                             Contáctanos
                         </a>
                     </span>

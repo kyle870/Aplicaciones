@@ -10,7 +10,7 @@ const cancelBtn = document.querySelector("#cancel-profile-btn");
 const elementsPreview = document.querySelector("#textPreview");
 
 const img = document.querySelector("#vista");
-let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+//let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
 
 function defaultBtnActive() {
     defaultBtn.click();

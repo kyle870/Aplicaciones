@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./../Style/sizes.css">
     <link rel="stylesheet" href="./../Style/bootstrap.min.css">
     <link rel="shortcut icon" href="./../Resources/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <title>Contáctanos</title>
 </head>
@@ -22,7 +23,7 @@
     <!--Esto es la barra de navegacion de la pagina-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a href="./../index.html" class="navbar-brand">
-            <img src="../Resources/LogoGrande.png" height="28" alt="CoolBrand">
+            <img src="../Resources/LogoGrande.png" height="40" alt="CoolBrand">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -61,13 +62,13 @@
                         <label class="w-100 text-center m-auto text-primary font-18 text-bold">Iniciar Sesión</label>
                     </div>
                     <div class="card-body row m-0">
-                        <label class="text-black-50">Nombre de usuario</label>
-                        <input class="form-component w-100 mb-4" type="text" required>
-                        <label class="text-black-50">Contraseña</label>
-                        <input class="form-component w-100" type="password" required>
+                        <label for="inpUsuario" class="text-black-50 text-bold font-18"><i class="fas fa-users mx-2 fh-2"></i> Nombre de usuario</label>
+                        <input id="inpUsuario" class="form-component w-100 mb-4" type="text" required>
+                        <label for="inpPassword" class="text-black-50 text-bold font-18"><i class="fas fa-key mx-2"></i>Contraseña</label>
+                        <input id="inpPassword" class="form-component w-100" type="password" required>
                     </div>
                     <div class="card-footer w-100 items-in-row py-2">
-                        <button type="submit" class="button-primary text-white mx-auto">Ingresar</button>
+                        <button type="submit" class="button-primary text-white text-bold mx-auto">Ingresar<i class="fas fa-sign-in-alt ml-2"></i></button>
                     </div>
                 </form>
             </div>
@@ -152,17 +153,17 @@
                         Enlaces rápidos
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="# ">
+                        <a href="../index.html">
                             Inicio
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Anuncios.html ">
+                        <a href="./Anuncios.html ">
                             Anuncios
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Contactanos.html ">
+                        <a href="./Contactanos.html ">
                             Contáctanos
                         </a>
                     </span>

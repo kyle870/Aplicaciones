@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="./../Style/bootstrap.min.css">
     <link rel="shortcut icon" href="./../Resources/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
-
     <title>Perfil</title>
 </head>
 
@@ -25,7 +23,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a href="./../index.html" class="navbar-brand">
-            <img src="../Resources/LogoGrande.png" height="28" alt="CoolBrand">
+            <img src="../Resources/LogoGrande.png" height="40" alt="CoolBrand">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -59,34 +57,34 @@
                             <div class="card-title w-100 items-in-row p-3">
                                 <label class="w-100 text-center m-auto font-18 text-bold">Jonissa María Alfaro Carrión</label>
                             </div>
-                            <div class="card-body row m-0">
+                            <div id="cardBodyProfile" class="card-body row m-0 px-3">
 
-                                <div class="row m-0 col-lg-6 col-md-6 col-sm-12 ">
-                                    <div class="container px-0 py-3">
-                                        <div class="wrapper w-100 h-100 "> <!---Elementos para subir la imagen-->
-                                           <div class="image">
+                                <div class="row m-0 col-lg-4 col-md-6 col-sm-12 ">
+                                    <div id="container-profile" class="container px-0 ">
+                                        <div id="wrapper-profile" class="wrapper w-100 h-100 "> <!---Elementos para subir la imagen-->
+                                           <div id="image-profile" class="image">
                                               <img class="mh-100 mw-100" id="vista" src="#" alt="">
                                            </div>
                                            <div id="textPreview" class="content">
-                                              <div class="icon text-center">
-                                                 <i class="fas fa-cloud-upload-alt"></i>
-                                                 <input id="default-btn" type="file" accept="image/*" multiple hidden>
-                                              </div>
-                                              <div class="text text-center p-2">
-                                                 Subir foto de perfil
-                                              </div>
-                                           </div>
+                                                <div class="icon text-center">
+                                                    <i class="fas fa-cloud-upload-alt"></i>
+                                                </div>
+                                                <div class="text text-black-50 text-center p-2">
+                                                    Subir foto de perfil
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div id="div-foto-perfil" class="row justify-content-center mt-3 mx-auto">
+                                    <div id="btnGroup-profile" class="row justify-content-center py-3 my-auto mx-auto">
                                         <button id="primary_profile-btn"  type="button" onclick="defaultBtnActive()"class="btn btn-success text-white cursor-pointer  font-weight-bold m-2"><i class="fas fa-cloud-upload-alt mx-2"></i>Cargar</button>
+                                        <input id="default-btn" type="file" accept="image/*" hidden >
                                         <button id="cancel-profile-btn" class="btn btn-outline-danger cursor-pointer  font-weight-bold m-2"><i class="fas fa-trash mx-2"></i>Eliminar</button>
                                     </div>
                                 </div>
 
-                                <div id="desc-persona" class="row col-lg-6 col-md-6 col-sm-12 mx-auto">
-                                    <div class="py-3 w-100 h-100">
-                                        <textarea id="descript" class="form-component text-justify m-0 w-100 h-100" placeholder="Breve descripción de tu persona..."></textarea>
+                                <div id="desc-persona" class="row col-lg-8 col-md-6 col-sm-12 mx-auto">
+                                    <div class="py-0 w-100 h-100">
+                                        <textarea id="txtDescript" class="form-component text-justify m-0 w-100" placeholder="Breve descripción de tu persona..."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -100,29 +98,29 @@
                             <div class="card-title w-100 items-in-row py-3">
                                 <label class="w-100 text-center m-auto font-18 text-bold">Datos personales</label>
                             </div>
-                            <div class="card-body row m-0">
+                            <div class="card-body row m-0 px-3">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="claseNombre">
-                                        <label class="text-black-50">Nombre Completo</label>
+                                        <label for="inpNombre" class="text-black-50 text-bold">Nombre Completo</label>
                                         <input id="inpNombre" class="form-component w-100 mb-4">
                                     </div>
                                     <div class="claseFecha">
-                                        <label class="text-black-50">Fecha de Nacimiento</label>
+                                        <label for="inpFecha" class="text-black-50 text-bold">Fecha de Nacimiento</label>
                                         <input id="inpFecha" type="date" class="form-component w-100 mb-4">                                        
                                     </div>
                                     <div class="claseCelular">
-                                        <label class="text-black-50">Telefono Celular</label>
+                                        <label for="inpCelular" class="text-black-50 text-bold">Teléfono Celular</label>
                                         <input id="inpCelular" class="form-component w-100 mb-4">                                        
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="claseCorreo">
-                                        <label class="text-black-50">Correo</label>
-                                        <input id="inpCorreo" class="form-component w-100 mb-4">
+                                        <label for="inpCorreo" class="text-black-50 text-bold">Correo</label>
+                                        <input id="inpCorreo" type="email" class="form-component w-100 mb-4">
                                     </div>
                                     <div class="claseDepartamento">
-                                        <label class="text-black-50">Departamento</label>
-                                        <select id="category-post" class="form-component w-100 mb-4">
+                                        <label for="selectorDepartamento" class="text-black-50 text-bold">Departamento</label>
+                                        <select id="selectorDepartamento" class="form-component w-100 mb-4">
                                             <option value="">Seleccione</option>
                                             <option value="1">Boaco</option>
                                             <option value="2">Carazo</option>
@@ -144,8 +142,8 @@
                                         </select>
                                     </div>
                                     <div class="claseGenero">
-                                        <label class="text-black-50">Género</label>
-                                        <select id="category-post" class="form-component align-middle w-100 mb-4">
+                                        <label for="selectorGenero" class="text-black-50 text-bold">Género</label>
+                                        <select id="selectorGenero" class="form-component align-middle w-100 mb-4">
                                             <option value="">Seleccione</option>
                                             <option value="1">Hombre</option>
                                             <option value="2">Mujer</option>        
@@ -157,12 +155,12 @@
                                         <label class="w-100 text-center m-auto font-18 text-bold">Administración de contraseña</label>
                                     </div>
                                     <div class="claseContrasena col-lg-6 col-md-6 col-sm-12 m-0">
-                                        <label class="text-black-50">Contraseña</label>
-                                        <input id="inpContrasena" class="form-component w-100 mb-4">
+                                        <label for="inpContrasena" class="text-black-50 text-bold">Contraseña</label>
+                                        <input id="inpContrasena" type="password" class="form-component w-100 mb-4">
                                     </div>
                                     <div class="nuevaContrasena col-lg-6 col-md-6 col-sm-12 m-0">
-                                        <label class="text-black-50">Nueva Contraseña</label>
-                                        <input id="inpNuevaContrasena" class="form-component w-100 mb-4">
+                                        <label for="inpNuevaContrasena" class="text-black-50 text-bold">Nueva Contraseña</label>
+                                        <input id="inpNuevaContrasena" type="password" class="form-component w-100 mb-4">
                                     </div>
                                 </form>
                             </div>
@@ -187,7 +185,7 @@
             <div class="p-5 row footer ">
                 <div class="col-extlarg-4 col-mediu-6 col-peque-12 row m-0 mb-3 ">
                     <div class="col-12 row m-0 ">
-                        <img class="mx-0 logo " src="./../Resources/LogoGrande.png " />
+                        <img class="mx-0 logo " src="./../Resources/LogoGrande.png " title="Find-It-Now" />
                     </div>
                     <div class="col-12 pt-4 text-white-75 ">
                         <span class="mr-3 ">
@@ -260,17 +258,17 @@
                         Enlaces rápidos
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="# ">
+                        <a href="../index.html">
                             Inicio
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Anuncios.html ">
+                        <a href="./Anuncios.html ">
                             Anuncios
                         </a>
                     </span>
                     <span class="col-12 text-white-75 ">
-                        <a href="./Views/Contactanos.html ">
+                        <a href="./Contactanos.html ">
                             Contáctanos
                         </a>
                     </span>
