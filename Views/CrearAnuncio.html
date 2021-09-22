@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="./../Style/sizes.css">
     <link rel="stylesheet" href="./../Style/bootstrap.min.css">
     <link rel="shortcut icon" href="./../Resources/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 
 
     <title>Crear Anuncio</title>
@@ -59,9 +61,9 @@
                                 <label class="w-100 text-center m-auto  font-18 text-bold">Detalles</label>
                             </div>
                             <div class="card-body row m-0">
-                                <label for="title-post" class="text-black-50 text-bold">Título</label>
+                                <label for="title-post" class="text-black-50 text-bold"><i class="fas fa-text-size mr-2"></i>Título</label>
                                 <input id="title-post" class="form-component w-100 mb-4">
-                                <label for="category-post" class="text-black-50 text-bold">Categoría</label>
+                                <label for="category-post" class="text-black-50 text-bold"><i class="fas fa-shapes mr-2"></i>Categoría</label>
                                 <select id="category-post" class="form-component w-100 mb-4">
                                     <option value="">Seleccione</option>
                                     <option value="1">Aparatos electronicos</option>
@@ -75,11 +77,11 @@
                                     <option value="9">Servicios profesionales</option>
                                     <option value="10">Vehiculos</option>
                                 </select>
-                                <label for="precio-post" class="text-black-50 text-bold">Precio C$</label>
+                                <label for="precio-post" class="text-black-50 text-bold"><i class="fas fa-money-bill-wave-alt mr-2"></i>Precio C$</label>
                                 <input id="precio-post" class="form-component w-100 mb-4" type="text">
-                                <label for="inpDisponible" class="text-black-50 text-bold">Elementos dispobibles</label>
+                                <label for="inpDisponible" class="text-black-50 text-bold"><i class="fas fa-balance-scale mr-2"></i>Cantidad disponible</label>
                                 <input id="inpDisponible" class="form-component w-100 mb-4" type="text">
-                                <label for="inpCondition" class="text-black-50 text-bold">Condicion</label>
+                                <label for="inpCondition" class="text-black-50 text-bold"><i class="fas fa-list-ul mr-2"></i>Condición</label>
                                 <select id="inpCondition" class="form-component w-100 mb-4">
                                     <option value="">Seleccione</option>
                                     <option value="1">Nuevo</option>
@@ -111,7 +113,7 @@
                                              <i class="fas fa-cloud-upload-alt"></i>
                                           </div>
                                           <div class="text text-center text-black-50 p-2">
-                                             No has seleccionado una imagen!
+                                             No has seleccionado una imagen para tu anuncio!
                                           </div>
                                        </div>
                                        <div id="cancel-btn">
@@ -124,7 +126,7 @@
                                 </div>    
 
                                 <div id="containerButton" class=" w-100">
-                                    <button class="mt-3 btn btn-info btn-block " onclick="defaultBtnActive()" id="custom-btn"><i class="fas fa-cloud-upload-alt mx-2"></i>Elegir una imagen</button>
+                                    <button class="mt-3 btn btn-info btn-block " onclick="defaultBtnActive()" id="custom-btn"><i class="fas fa-cloud-upload-alt mx-2"></i>Cargar foto</button>
                                     <input id="default-btn" type="file" hidden>
                                 </div>
                             </div>
